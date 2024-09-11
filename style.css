@@ -1,0 +1,261 @@
+*,
+html {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: sans-serif;
+  background-color: gray;
+  color: black;
+  width: 100%;
+  /* min-height: 2000px; */
+}
+/* navbar */
+.container-navbar {
+  background-color: rgba(1, 1, 1, 0.8);
+  border-bottom: white;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+.container-logo {
+  display: flex;
+  align-items: center;
+  padding-left: 2vh;
+}
+.logo {
+  height: 5vh;
+  width: 5vh;
+}
+.brand {
+  color: aliceblue;
+  padding-left: 2vh;
+  font-weight: bolder;
+  font-size: larger;
+}
+.brand span {
+  color: aqua;
+  font-style: italic;
+}
+.container-menu {
+  color: aliceblue;
+  padding-right: 2vh;
+}
+.a-navbar {
+  list-style-type: none;
+  text-decoration: none;
+  color: aliceblue;
+  padding-right: 2vh;
+  font-weight: bolder;
+  display: inline-block;
+}
+.a-navbar:hover {
+  background-color: aqua;
+  padding: 10px;
+  transition: all 1s ease-in-out;
+  border-radius: 2vh;
+  color: black;
+}
+.container-extra a {
+  color: aliceblue;
+  margin: 0.5rem;
+}
+.container-extra a:hover {
+  color: aqua;
+}
+#menu {
+  display: none;
+}
+/* hero */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("./img/Untitled.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+.hero .content {
+  padding: 1.4rem;
+  max-width: 60rem;
+}
+.hero .content h1 {
+  font-size: 6em;
+  color: aliceblue;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.8);
+  line-height: 1.2;
+}
+.hero .content h1 span {
+  color: aqua;
+}
+.hero .content p {
+  font-size: 2rem;
+  margin-top: 2vh;
+  line-height: 1.2;
+  font-weight: 100;
+  text-shadow: 1 px 1px 3px whitesmoke;
+  color: whitesmoke;
+  font-weight: bolder;
+}
+.hero .content .cta {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.4rem;
+  color: black;
+  background-color: aqua;
+  border-radius: 3vh;
+  box-shadow: 1px 1px 3px rgba(1, 1, 1, 0.8);
+  text-decoration: none;
+}
+
+/* product section */
+.product {
+  padding: 8rem 7% 20rem;
+}
+.product h2 {
+  text-align: center;
+  font-size: 3rem;
+}
+.product h2 span {
+  color: wheat;
+}
+.product-img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  line-height: 1.2;
+}
+.gambar1 {
+  width: 50vh;
+  height: 70vh;
+}
+.gambar2 {
+  width: 50vh;
+  height: 70vh;
+}
+.gambar3 {
+  width: 50vh;
+  height: 70vh;
+}
+.gambar4 {
+  width: 50vh;
+  height: 70vh;
+}
+.gambar5 {
+  width: 50vh;
+  height: 70vh;
+}
+/* about section */
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16rem 7% 20rem;
+  font-size: large;
+  font-weight: bolder;
+  background-image: url("./img/lombok-horizon.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.about h2 {
+  color: whitesmoke;
+  padding-bottom: 3vh;
+  font-size: 2rem;
+  font-weight: 900;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.8);
+  line-height: 1.2;
+  justify-content: center;
+}
+.about h2 span {
+  color: aqua;
+}
+.about p {
+  font-size: 2rem;
+  margin-top: 2vh;
+  line-height: 1.2;
+  font-weight: 100;
+  text-shadow: 1 px 1px 3px whitesmoke;
+  color: whitesmoke;
+  font-weight: bolder;
+}
+/* contact section */
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25rem 7% 20rem;
+  font-size: large;
+  font-weight: bolder;
+}
+.contact h2 {
+  color: whitesmoke;
+}
+.contact h2 span {
+  color: aqua;
+}
+.contact a {
+  font-size: 2rem;
+  margin-top: 3vh;
+  line-height: 1.2;
+  font-weight: 100;
+  text-shadow: 1 px 1px 3px whitesmoke;
+  color: rgb(2, 2, 2);
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+/* media queries */
+
+/* laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 65%;
+  }
+  #menu {
+    display: inline-block;
+  }
+  .container-menu {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: black;
+    width: 20rem;
+    height: 40vh;
+  }
+  .container-menu.active {
+    right: 0;
+  }
+  .container-menu a {
+    display: block;
+    font-size: 2rem;
+    color: white;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    padding-left: 10vh;
+  }
+}
+/* mobile phone */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
